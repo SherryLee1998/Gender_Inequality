@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Noah David Frassrand, Jingyan Li, Melody Yunhan Zhang">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Gender Career Inequality</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="CSS/carousel.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Gender Career Inequality</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header-->
+    <div class="page-holder bg-cover">
+
+      <div class="container py-5">
+        <header class="text-center text-black py-5" style="background: url()">
+          <img src="pictures/header_pic.png" alt="Italian Trulli" width="60%" height="60%" fill="#777">
+          <h1 class=" display-4 font-weight-bold mb-4">Gender Career Inequality</h1>
+          <p class="lead mb-md-0 font-weight-bold">Noah David Frassrand, Jingyan Li, Melody Yunhan Zhang </p>
+          <div class="text-black">
+            <h2 class="featurette-heading">Introduction</h2>
+            <p class="lead">It has been observed that women consistently earn lower than men, across occupations, across
+              education levels,
+              across countries. The Wage Gap is defined as systemic and institutionalized differences in earnings
+              between
+              men and women. In 2020, women earned 84% of what men earned, according to a Pew Research Center analysis
+              of
+              median hourly earnings of both full- and part-time workers. Based on this estimate, it would take an extra
+              42
+              days of work for women to earn what men did in 2020.</p>
+            <p class="lead">
+              This effect is exacerbated in especially women of color. This is closely linked to the history of labor in
+              America. Discrimination has historically been ingrained in the U.S., from depriving wages to Black women
+              or
+              stealing land and opportunity from Native women. There are lasting consequences to this history of
+              oppression, which we will explore below.
+            </p>
+            <p class="lead">
+              At the current rate of progress, the gender pay gap will not close until 2111. So why does the gender gap
+              still persist? Much of the gap is driven by factors such as educational attainment, occupational
+              segregation
+              and work experience. Women as a whole are over-represented in lower-paying occupations, and
+              underrepresented
+              in high-paying ones, relative to their share of the workforce. While discrimination on the basis of sex
+              has
+              been prohibited, it still plays a role in the wage discrepancies.
+
+            </p>
+            <p class="lead">
+              Below, we will explore these disparities in income nationally and globally in order to better visualize
+              patterns in gender wage gaps.
+            </p>
+          </div>
+        </header>
+      </div>
+    </div>
+  </header>
+  <div>
+
+  </div>
+  <main>
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" style="margin-top: 100px;">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="pictures/woman_man.png" alt="Italian Trulli" width="60%" height="60%" fill="#777">
+          <h2>Gender earning differences</h2>
+          <p>We find salary differences between women and men between 2009 to 2018.</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="pictures/occupationsDiff.png" alt="Italian Trulli" width="60%" height="60%" fill="#777">
+          <h2>Income Inequality By Occupations and Gender</h2>
+          <p>Gender career inequality exists in differences occupations.</p>
+
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="pictures/education.png" alt="Italian Trulli" width="60%" height="60%" fill="#777">
+          <h2>Income Inequality By Education and Gender</h2>
+          <p>from high school to university up to professinal degree</p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="pictures/womenCEO.png" alt="Italian Trulli" width="60%" height="60%" fill="#777">
+          <h2>Women CEOs in Fortune 500</h2>
+          <p>Women CEOS share of ceos who are women in percents in Fortune 500</p>
+
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+          <img src="pictures/womenUniversity.png" alt="Italian Trulli" width="60%" height="60%" fill="#777">
+          <h2>Women University Presidents</h2>
+          <p>Percentage of university and college presidents who are women</p>
+
+        </div><!-- /.col-lg-4 -->
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-6">
+          <h2 class="featurette-heading">Difference in median weekly earnings<span class="text-muted"></span>
+          </h2>
+          <p class="lead">1. same trand 2. men's salary is always larger than women's</p>
+
+        </div>
+        <!-- first graph -->
+        <div class="col-md-6">
+          <script>
+            window.onload = function () {
+              var options = {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                  text: "Men earnings VS Women earnings"
+                },
+                axisX: {
+                  valueFormatString: "MMM YYYY"
+                },
+                axisY: {
+                  title: "Weekly earnings",
+                  suffix: "",
+                  minimum: 600
+                },
+                toolTip: {
+                  shared: true
+                },
+                legend: {
+                  cursor: "pointer",
+                  verticalAlign: "bottom",
+                  horizontalAlign: "left",
+                  dockInsidePlotArea: true,
+                  itemclick: toogleDataSeries
+                },
+                data: [{
+                  type: "line",
+                  showInLegend: true,
+                  name: "Women salary",
+                  markerType: "square",
+                  xValueFormatString: "YYYY,MMM,DD",
+                  color: "#F08080",
+                  yValueFormatString: "#,## dollar",
+                  dataPoints: [
+                    { x: new Date(2009, 4, 1), y: 666 },
+
+                    { x: new Date(2010, 1, 1), y: 662 },
+                    { x: new Date(2010, 2, 1), y: 671 },
+                    { x: new Date(2010, 3, 1), y: 670 },
+                    { x: new Date(2010, 4, 1), y: 676 },
+
+                    { x: new Date(2011, 1, 1), y: 679 },
+                    { x: new Date(2011, 2, 1), y: 687 },
+                    { x: new Date(2011, 3, 1), y: 681 },
+                    { x: new Date(2011, 4, 1), y: 686 },
+
+                    { x: new Date(2012, 1, 1), y: 693 },
+                    { x: new Date(2012, 2, 1), y: 687 },
+                    { x: new Date(2012, 3, 1), y: 693 },
+                    { x: new Date(2012, 4, 1), y: 690 },
+
+                    { x: new Date(2013, 1, 1), y: 699 },
+                    { x: new Date(2013, 2, 1), y: 706 },
+                    { x: new Date(2013, 3, 1), y: 705 },
+                    { x: new Date(2013, 4, 1), y: 712 },
+
+                    { x: new Date(2014, 1, 1), y: 716 },
+                    { x: new Date(2014, 2, 1), y: 715 },
+                    { x: new Date(2014, 3, 1), y: 721 },
+                    { x: new Date(2014, 4, 1), y: 724 },
+
+                    { x: new Date(2015, 1, 1), y: 724 },
+                    { x: new Date(2015, 2, 1), y: 726 },
+                    { x: new Date(2015, 3, 1), y: 727 },
+                    { x: new Date(2015, 4, 1), y: 730 },
+
+                    { x: new Date(2016, 1, 1), y: 743 },
+                    { x: new Date(2016, 2, 1), y: 744 },
+                    { x: new Date(2016, 3, 1), y: 750 },
+                    { x: new Date(2016, 4, 1), y: 760 },
+
+                    { x: new Date(2017, 1, 1), y: 759 },
+                    { x: new Date(2017, 2, 1), y: 780 },
+                    { x: new Date(2017, 3, 1), y: 771 },
+                    { x: new Date(2017, 4, 1), y: 771 },
+
+
+                    { x: new Date(2018, 1, 1), y: 776 },
+                    { x: new Date(2018, 2, 1), y: 780 },
+                    { x: new Date(2018, 3, 1), y: 801 },
+                    { x: new Date(2018, 4, 1), y: 796 }
+                  ]
+                },
+                {
+                  type: "line",
+                  showInLegend: true,
+                  name: "Men salary",
+                  lineDashType: "dash",
+                  yValueFormatString: "#,## dollar",
+                  dataPoints: [
+                    { x: new Date(2009, 4, 1), y: 823 },
+
+                    { x: new Date(2010, 1, 1), y: 836 },
+                    { x: new Date(2010, 2, 1), y: 814 },
+                    { x: new Date(2010, 3, 1), y: 821 },
+                    { x: new Date(2010, 4, 1), y: 826 },
+
+                    { x: new Date(2011, 1, 1), y: 821 },
+                    { x: new Date(2011, 2, 1), y: 830 },
+                    { x: new Date(2011, 3, 1), y: 836 },
+                    { x: new Date(2011, 4, 1), y: 838 },
+
+                    { x: new Date(2012, 1, 1), y: 841 },
+                    { x: new Date(2012, 2, 1), y: 870 },
+                    { x: new Date(2012, 3, 1), y: 836 },
+                    { x: new Date(2012, 4, 1), y: 868 },
+
+                    { x: new Date(2013, 1, 1), y: 860 },
+                    { x: new Date(2013, 2, 1), y: 863 },
+                    { x: new Date(2013, 3, 1), y: 855 },
+                    { x: new Date(2013, 4, 1), y: 865 },
+
+                    { x: new Date(2014, 1, 1), y: 865 },
+                    { x: new Date(2014, 2, 1), y: 860 },
+                    { x: new Date(2014, 3, 1), y: 878 },
+                    { x: new Date(2014, 4, 1), y: 878 },
+
+                    { x: new Date(2015, 1, 1), y: 886 },
+                    { x: new Date(2015, 2, 1), y: 890 },
+                    { x: new Date(2015, 3, 1), y: 896 },
+                    { x: new Date(2015, 4, 1), y: 904 },
+
+                    { x: new Date(2016, 1, 1), y: 903 },
+                    { x: new Date(2016, 2, 1), y: 914 },
+                    { x: new Date(2016, 3, 1), y: 917 },
+                    { x: new Date(2016, 4, 1), y: 924 },
+
+                    { x: new Date(2017, 1, 1), y: 940 },
+                    { x: new Date(2017, 2, 1), y: 939 },
+                    { x: new Date(2017, 3, 1), y: 943 },
+                    { x: new Date(2017, 4, 1), y: 943 },
+
+
+                    { x: new Date(2018, 1, 1), y: 955 },
+                    { x: new Date(2018, 2, 1), y: 964 },
+                    { x: new Date(2018, 3, 1), y: 980 },
+                    { x: new Date(2018, 4, 1), y: 991 }
+                  ]
+                }]
+              };
+
+              var options1 = {
+                animationEnabled: true,
+                zoomEnabled: true,
+                theme: "light2",
+                title: {
+                  text: "Women CEOs Percents in Fortune 500"
+                },
+                subtitles: [{
+                  text: "From 1995 to 2018",
+                  fontSize: 15
+                }],
+                axisX: {
+                  title: "Year"
+                },
+                axisY: {
+                  title: "Percent %",
+                  includeZero: true
+                },
+                data: [{
+                  type: "bubble",
+                  xValueFormatString: "#,#0.0",
+                  yValueFormatString: "#,#0.0",
+                  zValueFormatString: "#,#0.0",
+                  toolTipContent: "<b>{name}</b><br/> Women CEOs percent: {y}% <br/>",
+                  dataPoints: [
+                    { x: 1995, y: 0, z: 0 * 3, name: "1995" },
+                    { x: 1996, y: 0.2, z: 0.2 * 3, name: "1996" },
+                    { x: 1997, y: 0.4, z: 0.4 * 3, name: "1997" },
+                    { x: 1998, y: 0.4, z: 0.4 * 3, name: "1998" },
+                    { x: 1999, y: 0.4, z: 0.4 * 3, name: "1999" },
+                    { x: 2000, y: 0.4, z: 0.4 * 3, name: "2000" },
+                    { x: 2001, y: 0.8, z: 0.8 * 3, name: "2001" },
+                    { x: 2002, y: 1.2, z: 1.2 * 3, name: "2002" },
+                    { x: 2003, y: 1.4, z: 1.4 * 3, name: "2003" },
+                    { x: 2004, y: 1.6, z: 1.6 * 3, name: "2004" },
+                    { x: 2005, y: 1.6, z: 1.6 * 3, name: "2005" },
+                    { x: 2006, y: 2, z: 2 * 3, name: "2006" },
+                    { x: 2007, y: 2.4, z: 2.4 * 3, name: "2007" },
+                    { x: 2008, y: 2.4, z: 2.4 * 3, name: "2008" },
+                    { x: 2009, y: 3, z: 3 * 3, name: "2009" },
+                    { x: 2010, y: 3, z: 3 * 3, name: "2010" },
+                    { x: 2011, y: 2.4, z: 2.4 * 3, name: "2011" },
+                    { x: 2012, y: 3.6, z: 3.6 * 3, name: "2012" },
+                    { x: 2013, y: 4, z: 4 * 3, name: "2013" },
+                    { x: 2014, y: 4.8, z: 4.8 * 3, name: "2014" },
+                    { x: 2015, y: 4.8, z: 4.8 * 3, name: "2015" },
+                    { x: 2016, y: 4.2, z: 4.2 * 3, name: "2016" },
+                    { x: 2017, y: 6.4, z: 6.4 * 3, name: "2017" },
+                    { x: 2018, y: 4.8, z: 4.8 * 3, name: "2018" }
+                  ]
+                }]
+              };
+              var options3 = {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                  text: "Women University Presidents Percents in US"
+                },
+                axisY: {
+                  title: "Percent %",
+                  valueFormatString: "#,#0.0",
+                },
+                data: [{
+                  type: "area",
+                  markerSize: 10,
+                  xValueFormatString: "YYYY",
+                  yValueFormatString: "#,#0.0",
+                  toolTipContent: "<b>In {x}</b><br/> Women University Presidents percent: {y}% <br/>",
+                  dataPoints: [
+                    { x: new Date(1986, 0), y: 9.5 },
+                    { x: new Date(1998, 0), y: 19.3 },
+                    { x: new Date(2001, 0), y: 21.1 },
+                    { x: new Date(2006, 0), y: 23 },
+                    { x: new Date(2011, 0), y: 26.4 }
+                  ]
+                }]
+              };
+
+              var options4 = {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                  text: "Weekly Income for Men Vs Women in Differences Occupations"
+                },
+                axisY: {
+                  title: "Weekly earning",
+                  valueFormatString: "#0",
+                  includeZero: true,
+                  suffix: "",
+                  prefix: "$"
+                },
+                legend: {
+                  cursor: "pointer",
+                  itemclick: toogleDataSeries
+                },
+                toolTip: {
+                  shared: true
+                },
+                data: [{
+                  type: "area",
+                  name: "Men",
+                  markerSize: 5,
+                  showInLegend: true,
+                  yValueFormatString: "$#",
+                  dataPoints: [
+                    { label: "Cheif Excutives", y: 2251 },
+                    { label: "Pharmacists", y: 2117 },
+                    { label: "Lawyers", y: 1914 },
+                    { label: "Computer and IS managers", y: 1817 },
+                    { label: "Physicians and surgeons", y: 1915 },
+                    { label: "Engineers, all other", y: 1537 },
+                    { label: "software developers", y: 1751 },
+                    { label: "Management analysts", y: 1519 },
+                    { label: "Operations research analysts", y: 1574 },
+                    { label: "Human resources managers", y: 1494 },
+                    { label: "Marketing and sales managers", y: 1603 },
+                    { label: "Education administrators", y: 1585 },
+                    { label: "Financial analysts", y: 1680 },
+                    { label: "Editors", y: 1205 },
+                    { label: "Web developers", y: 1233 },
+                    { label: "Secondary school teachers", y: 1149 },
+                    { label: "Accountants and auditors", y: 1345 },
+                    { label: "Social and community service managers", y: 1142 },
+                    { label: "Designers", y: 1099 }
+                  ]
+                }, {
+                  type: "area",
+                  name: "Women",
+                  markerSize: 5,
+                  showInLegend: true,
+                  yValueFormatString: "$#",
+                  dataPoints: [
+                    { label: "Cheif Excutives", y: 1836 },
+                    { label: "Pharmacists", y: 1811 },
+                    { label: "Lawyers", y: 1717 },
+                    { label: "Computer and IS managers", y: 1563 },
+                    { label: "Physicians and surgeons", y: 1533 },
+                    { label: "Engineers, all other", y: 1448 },
+                    { label: "software developers", y: 1415 },
+                    { label: "Management analysts", y: 1348 },
+                    { label: "Operations research analysts", y: 1325 },
+                    { label: "Human resources managers", y: 1274 },
+                    { label: "Marketing and sales managers", y: 1258 },
+                    { label: "Education administrators", y: 1252 },
+                    { label: "Financial analysts", y: 1171 },
+                    { label: "Editors", y: 1125 },
+                    { label: "Web developers", y: 1026 },
+                    { label: "Secondary school teachers", y: 1006 },
+                    { label: "Accountants and auditors", y: 988 },
+                    { label: "Social and community service managers", y: 965 },
+                    { label: "Designers", y: 918 }
+                  ]
+                }]
+              };
+
+              var options5 = {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                  text: "Yearly Income for Men Vs Women in Differences Educations Background"
+                },
+                axisX: {
+
+                },
+                axisY: {
+                  prefix: "$",
+                  suffix: "K",
+                },
+                toolTip: {
+                  shared: true
+                },
+                legend: {
+                  cursor: "pointer",
+                  itemclick: toogleDataSeries
+                },
+                data: [
+                  {
+                    type: "column",
+                    name: "Men",
+                    showInLegend: true,
+                    yValueFormatString: "$#.0000k",
+                    dataPoints: [
+                      { label: "High School", y: 29.28371 },
+                      { label: "College/University without degree", y: 38.03963 },
+                      { label: "Professional degree", y: 40.36948 },
+                      { label: "Bechelor's degree", y: 34.02258 },
+                      { label: "Master's degree", y: 49.09661 },
+                      { label: "Doctoral degree", y: 66.48978 }
+                    ]
+                  },
+                  {
+                    type: "column",
+                    name: "Women",
+                    showInLegend: true,
+                    yValueFormatString: "$#.0000k",
+                    dataPoints: [
+                      { label: "High School", y: 1.2495 },
+                      { label: "College/University without degree", y: 13.187 },
+                      { label: "Professional degree", y: 26.70437 },
+                      { label: "Bechelor's degree", y: 22.92334 },
+                      { label: "Master's degree", y: 36.20729 },
+                      { label: "Doctoral degree", y: 45.0532 }
+                    ]
+                  },
+                  {
+                    type: "line",
+                    name: "Average Salary",
+                    markerBorderColor: "white",
+                    markerBorderThickness: 2,
+                    showInLegend: true,
+                    yValueFormatString: "$#.0000k",
+                    dataPoints: [
+                      { label: "High School", y: 28.24967 },
+                      { label: "College/University without degree", y: 35.55436 },
+                      { label: "Professional degree", y: 38.15839 },
+                      { label: "Bechelor's degree", y: 32.37057 },
+                      { label: "Master's degree", y: 46.98885 },
+                      { label: "Doctoral degree", y: 62.68029 }
+                    ]
+                  }]
+              };
+
+              $("#sexdiff").CanvasJSChart(options);
+              $("#buble1").CanvasJSChart(options1);
+              $("#universityChart").CanvasJSChart(options3);
+              $("#occupationdiff").CanvasJSChart(options4);
+              $("#educationdiff").CanvasJSChart(options5);
+
+              function toogleDataSeries(e) {
+                if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                  e.dataSeries.visible = false;
+                } else {
+                  e.dataSeries.visible = true;
+                }
+                e.chart.render();
+              }
+
+            }
+          </script>
+          <div id="sexdiff" style="height: 370px; width: 100%;"></div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5 order-md-2">
+          <h2 class="featurette-heading">Income Inequality By Occupations and Gender<span class="text-muted"> for all
+              working American citizens as of January 2015. </span></h2>
+          <p class="lead"></p>
+        </div>
+
+        <div class="col-md-7">
+          <div id="occupationdiff" style="height: 370px; width: 100%;"></div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <div id="educationdiff" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="col-md-5">
+          <h2 class="featurette-heading"> Income Inequality By Education and Gender</h2>
+          <p class="lead"> from high school to university up to professinal degree</p>
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <div id="buble1" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Women CEOS <span class="text-muted">share of ceos who are women in percents
+              in Fortune 500</span></h2>
+          <p class="lead"></p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <div id="universityChart" style="height: 370px; width: 100%;"></div>
+        </div>
+        <div class="col-md-5">
+          <h2 class="featurette-heading">Women University Presidents <span class="text-muted">on U.S. accredited,
+              degree-granting institutions.</span></h2>
+          <p class="lead"></p>
+        </div>
+      </div>
+
+      <hr class=" featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-12">
+          <h2 class="featurette-heading">References</h2>
+          <p class="lead">
+            <li>https://data.world/bls/median-weekly-earnings-by-sex</li>
+            <li>https://www.kaggle.com/jonavery/incomes-by-career-and-gender</li>
+            <li>https://www.kaggle.com/josephassaker/gender-pay-gap-a-myth-or-a-reality</li>
+            <li>https://data.world/finance/women-fortune-500-ceos/workspace/file?filename=women_ceos.csv</li>
+            <li>https://data.world/education/women-university-presidents</li>
+          </p>
+        </div>
+      </div>
+      <!-- /END THE FEATURETTES -->
+    </div><!-- /.container -->
+    <!-- /END THE FEATURETTES -->
+    </div><!-- /.container -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <div>
+        <p class="float-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer>
+  </main>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+</body>
+
+</html>
