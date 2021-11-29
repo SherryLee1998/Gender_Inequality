@@ -318,7 +318,8 @@
                   fontSize: 15
                 }],
                 axisX: {
-                  title: "Year"
+                  title: "Year",
+                  valueFormatString: "# ",
                 },
                 axisY: {
                   title: "Percent %",
@@ -329,12 +330,12 @@
                   type: "bubble",
                   toolTipContent: "<b>{name}</b><br/> Women CEOs percent: {y}% <br/>",
                   dataPoints: [
-                    { x: "1995", y: 0, z: 0 * 3, name: "1995" },
-                    { x: "1996", y: 0.2, z: 0.2 * 3, name: "1996" },
+                    { x: 1995, y: 0, z: 0 * 3, name: "1995" },
+                    { x: 1996, y: 0.2, z: 0.2 * 3, name: "1996" },
                     { x: 1997, y: 0.4, z: 0.4 * 3, name: "1997" },
                     { x: 1998, y: 0.4, z: 0.4 * 3, name: "1998" },
                     { x: 1999, y: 0.4, z: 0.4 * 3, name: "1999" },
-                    { x: "2000", y: 0.4, z: 0.4 * 3, name: "2000" },
+                    { x: 2000, y: 0.4, z: 0.4 * 3, name: "2000" },
                     { x: 2001, y: 0.8, z: 0.8 * 3, name: "2001" },
                     { x: 2002, y: 1.2, z: 1.2 * 3, name: "2002" },
                     { x: 2003, y: 1.4, z: 1.4 * 3, name: "2003" },
@@ -386,7 +387,7 @@
                 animationEnabled: true,
                 theme: "light2",
                 title: {
-                  text: "Differences in Weekly Income by Occupation"
+                  text: "Differences in Weekly Earnings by Occupation"
                 },
                 axisY: {
                   title: "Weekly earning",
@@ -590,12 +591,8 @@
 
 
       <hr class="featurette-divider">
-
       <div class="row featurette">
-        <div class="col-md-5" style="margin-top: 100px;">
-          <div id="buble1" style="height: 370px; width: 100%;"></div>
-        </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <h2 class="featurette-heading">Exploring the share of Fortune 500 companies with female chief executive
             officers</h2>
           <p class="lead">This graph depicts the number of women who are CEOs in the Fortune 500. In the past 25 years,
@@ -607,14 +604,17 @@
             CEO of Xerox from 2009-2016 Usrula Burns, originally opposed these mandates, but have mentioned that they
             might support them if companies don't start to change on their own.</p>
         </div>
+        <div class="col-md-6" style="margin-top: 100px;">
+          <div id="buble1" style="height: 370px; width: 100%;"></div>
+        </div>
       </div>
 
       <hr class="featurette-divider">
       <div class="row featurette">
-        <div class="col-md-5" style="margin-top: 120px;">
+        <div class="col-md-6" style="margin-top: 120px;">
           <div id="universityChart" style="height:70%; width: 100%; text-align: center;"></div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <h2 class="featurette-heading">Female University Presidents <span class="text-muted">on U.S. accredited,
               degree-granting institutions.</span></h2>
           <p class="lead">The graph below shows the change in percentage of university presidents who are women from
