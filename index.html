@@ -322,19 +322,19 @@
                 },
                 axisY: {
                   title: "Percent %",
-                  includeZero: true
+                  includeZero: true,
+                  valueFormatString: "#",
                 },
                 data: [{
                   type: "bubble",
-
                   toolTipContent: "<b>{name}</b><br/> Women CEOs percent: {y}% <br/>",
                   dataPoints: [
-                    { x: 1995, y: 0, z: 0 * 3, name: "1995" },
-                    { x: 1996, y: 0.2, z: 0.2 * 3, name: "1996" },
+                    { x: "1995", y: 0, z: 0 * 3, name: "1995" },
+                    { x: "1996", y: 0.2, z: 0.2 * 3, name: "1996" },
                     { x: 1997, y: 0.4, z: 0.4 * 3, name: "1997" },
                     { x: 1998, y: 0.4, z: 0.4 * 3, name: "1998" },
                     { x: 1999, y: 0.4, z: 0.4 * 3, name: "1999" },
-                    { x: 2000, y: 0.4, z: 0.4 * 3, name: "2000" },
+                    { x: "2000", y: 0.4, z: 0.4 * 3, name: "2000" },
                     { x: 2001, y: 0.8, z: 0.8 * 3, name: "2001" },
                     { x: 2002, y: 1.2, z: 1.2 * 3, name: "2002" },
                     { x: 2003, y: 1.4, z: 1.4 * 3, name: "2003" },
@@ -409,7 +409,7 @@
                   showInLegend: true,
                   yValueFormatString: "$#",
                   dataPoints: [
-                    { label: "Chief Excutives", y: 2251 },
+                    { label: "Chief Executives", y: 2251 },
                     { label: "Pharmacists", y: 2117 },
                     { label: "Lawyers", y: 1914 },
                     { label: "Computer and IS managers", y: 1817 },
@@ -436,7 +436,7 @@
                   showInLegend: true,
                   yValueFormatString: "$#",
                   dataPoints: [
-                    { label: "Cheif Excutives", y: 1836 },
+                    { label: "Chief Executives", y: 1836 },
                     { label: "Pharmacists", y: 1811 },
                     { label: "Lawyers", y: 1717 },
                     { label: "Computer and IS managers", y: 1563 },
